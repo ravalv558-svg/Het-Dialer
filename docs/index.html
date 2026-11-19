@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="Meet HET Dialer — a modern Android phone app with a refined calling experience, contacts, call history and personalization.">
+  <meta name="keywords" content="HET Dialer, Android dialer, phone app, HET Phone">
+  <meta property="og:title" content="HET Dialer — A better calling experience">
+  <meta property="og:description" content="A modern Android phone app, designed with clarity and personality.">
+  <meta property="og:type" content="website">
+  <title>HET Dialer — A better calling experience</title>
+  <style>
+    :root{color-scheme:dark;--bg:#061120;--panel:rgba(255,255,255,.075);--line:rgba(255,255,255,.14);--text:#f4f8ff;--muted:#a9bad0;--cyan:#8eeaff;--blue:#70aaff;--accent:#9bdfff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 5%,rgba(43,128,202,.25),transparent 35%),radial-gradient(ellipse at 10% 45%,rgba(52,196,220,.12),transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:.02em}.logo{width:40px;height:40px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(142,234,255,.35),rgba(112,170,255,.12));border:1px solid var(--line);box-shadow:inset 0 1px rgba(255,255,255,.3);font-weight:850;color:white}.navlinks{display:flex;gap:26px;color:var(--muted);font-size:14px}.navlinks a:hover{color:white}
+    .glass{background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.045));border:1px solid var(--line);box-shadow:0 24px 80px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.16);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;padding:76px 0 100px}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.055);color:#c5eaff;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:#83e8ff;box-shadow:0 0 14px #83e8ff}.hero h1{font-size:clamp(46px,7vw,78px);line-height:1.02;letter-spacing:-.055em;margin:22px 0}.gradient{background:linear-gradient(100deg,#fff 5%,#a7eaff 48%,#83aaff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:560px;color:var(--muted);font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 20px;border-radius:15px;font-weight:700;font-size:14px;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px)}.primary{color:#061321;background:linear-gradient(115deg,#b5f2ff,#82b9ff);box-shadow:0 10px 35px rgba(101,190,255,.22)}.secondary{border:1px solid var(--line);background:rgba(255,255,255,.07)}.fine{font-size:12px;color:#8fa5bd;margin-top:14px}
+    .device-wrap{position:relative;display:grid;place-items:center;min-height:480px}.orb{position:absolute;width:330px;height:330px;border-radius:50%;background:rgba(69,173,255,.22);filter:blur(65px)}.device{position:relative;width:270px;padding:10px;border-radius:38px;background:linear-gradient(145deg,#d9efff,#506b8e 20%,#0b1728 55%,#8aaacb);box-shadow:0 35px 90px rgba(0,0,0,.55),inset 0 1px 3px rgba(255,255,255,.8);transform:rotate(3deg)}.screen{min-height:500px;border-radius:30px;padding:22px 17px;background:radial-gradient(ellipse at 50% 0%,rgba(91,166,231,.28),transparent 45%),linear-gradient(160deg,#10233b,#07111f 70%);border:1px solid rgba(255,255,255,.18);overflow:hidden}.status{display:flex;justify-content:space-between;font-size:10px;color:#d7e8f7;padding:0 5px}.screen-title{text-align:center;margin:42px 0 8px;color:#9db4ca;font-size:12px}.contact-avatar{width:82px;height:82px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;font-size:28px;font-weight:700;color:#eaf8ff;background:linear-gradient(145deg,#6fa8cf,#183b60);border:1px solid rgba(255,255,255,.35);box-shadow:0 10px 30px rgba(52,155,220,.25)}.contact-name{text-align:center;font-size:23px;font-weight:650}.contact-sub{text-align:center;font-size:11px;color:#9eb2c9}.call-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:40px 0 26px}.call-action{text-align:center;font-size:10px;color:#c4d5e7}.action-icon{width:43px;height:43px;border-radius:15px;margin:0 auto 8px;display:grid;place-items:center;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.13);font-size:17px}.end-call{width:58px;height:58px;border-radius:50%;margin:0 auto;display:grid;place-items:center;background:#f05262;color:white;font-size:23px;box-shadow:0 8px 24px rgba(240,82,98,.28)}
+    section{padding:65px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 35px}.section-head h2{font-size:clamp(30px,4vw,44px);letter-spacing:-.04em;margin:0 0 10px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:24px;border-radius:22px;min-height:175px}.feature-icon{font-size:24px;margin-bottom:12px}.feature h3{margin:0 0 7px;font-size:17px}.feature p{margin:0;color:var(--muted);font-size:14px}.download{padding:42px;border-radius:28px;text-align:center}.download h2{font-size:clamp(30px,4vw,43px);letter-spacing:-.04em;margin:0 0 10px}.download p{color:var(--muted);margin:0 auto 24px;max-width:620px}.pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);color:#c4eaff;font-size:12px;margin-bottom:16px}.notice{max-width:760px;margin:20px auto 0;color:#91a7bf;font-size:12px}.footer{border-top:1px solid rgba(255,255,255,.1);padding:26px 0 38px;color:#91a7bf;font-size:13px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer a{color:#c6eaff}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:55px 0 65px;gap:20px}.device-wrap{min-height:430px}.device{transform:none;width:245px}.screen{min-height:450px}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{gap:14px}.navlinks a:nth-child(2){display:none}}
+    @media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}.nav{padding:17px 0}.navlinks{font-size:12px;gap:12px}.hero h1{font-size:49px}.lead{font-size:16px}.grid{grid-template-columns:1fr}.feature{min-height:0}.download{padding:30px 18px}.footer{display:block}.footer span{display:block;margin:6px 0}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top" aria-label="HET Dialer home"><span class="logo">H</span><span>HET <span class="gradient">DIALER</span></span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#features">Features</a><a href="#about">About</a><a href="#download">Download</a></nav>
+  </header>
+  <main id="top">
+    <div class="wrap hero">
+      <div>
+        <span class="eyebrow"><span class="dot"></span> A modern Android phone experience</span>
+        <h1>Calling,<br><span class="gradient">beautifully</span><br>reimagined.</h1>
+        <p class="lead">Meet HET Dialer — a thoughtfully designed phone app that brings your calling experience, contacts and call history together in a clean, modern interface.</p>
+        <div class="actions"><a class="btn primary" href="https://github.com/ravalv558-svg/Het-Dialer/releases/download/v1.0.0/Phone.apk">↓ &nbsp; Download APK</a><a class="btn secondary" href="https://github.com/ravalv558-svg/Het-Dialer">View on GitHub ↗</a></div>
+        <p class="fine">Version 1.0.0 · Android APK · Free download</p>
+      </div>
+      <div class="device-wrap" aria-label="Illustrative HET Dialer call screen preview">
+        <div class="orb"></div><div class="device"><div class="screen"><div class="status"><span>9:41</span><span>● ● ▰</span></div><div class="screen-title">INCOMING CALL</div><div class="contact-avatar">H</div><div class="contact-name">HET Dialer</div><div class="contact-sub">Calling experience preview</div><div class="call-actions"><div class="call-action"><div class="action-icon">⌕</div>Mute</div><div class="call-action"><div class="action-icon">◖</div>Speaker</div><div class="call-action"><div class="action-icon">▦</div>Keypad</div></div><div class="end-call">⌕</div></div></div>
+      </div>
+    </div>
+    <section id="features" class="wrap">
+      <div class="section-head"><h2>Everything you need.<br><span class="gradient">Nothing in the way.</span></h2><p>A focused phone experience with a polished interface and useful everyday essentials.</p></div>
+      <div class="grid">
+        <article class="feature glass"><div class="feature-icon">☎</div><h3>Modern Dialer</h3><p>A clean calling interface designed to make everyday actions easy to reach.</p></article>
+        <article class="feature glass"><div class="feature-icon">◎</div><h3>Contacts</h3><p>Access and manage your contacts in a clear, organized experience.</p></article>
+        <article class="feature glass"><div class="feature-icon">◷</div><h3>Call History</h3><p>Review recent calls with a straightforward, readable layout.</p></article>
+        <article class="feature glass"><div class="feature-icon">✧</div><h3>Personalization</h3><p>Explore appearance options designed to make the app feel like yours.</p></article>
+        <article class="feature glass"><div class="feature-icon">◈</div><h3>Thoughtful Details</h3><p>Refined visual styling, clear controls and smooth interface details.</p></article>
+        <article class="feature glass"><div class="feature-icon">⌘</div><h3>Built for Android</h3><p>Install the APK on a compatible Android device and set it as your default phone app if supported.</p></article>
+      </div>
+    </section>
+    <section id="about" class="wrap">
+      <div class="section-head"><h2>Made with a clear idea.</h2><p>HET Dialer is an independent Android app project focused on making the everyday calling experience feel modern, simple and personal.</p></div>
+    </section>
+    <section id="download" class="wrap">
+      <div class="download glass"><span class="pill">HET DIALER · VERSION 1.0.0</span><h2>Your next call starts <span class="gradient">here.</span></h2><p>Download the Android APK from the official GitHub release. Device compatibility may vary by Android version and manufacturer.</p><a class="btn primary" href="https://github.com/ravalv558-svg/Het-Dialer/releases/download/v1.0.0/Phone.apk">↓ &nbsp; Download HET Dialer APK</a><p class="notice">Android may show a security prompt when installing an APK from outside Google Play. Only install apps from sources you trust. HET Dialer is not currently distributed through Google Play.</p></div>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>© <span id="year"></span> HET Dialer. All rights reserved.</span><span><a href="https://github.com/ravalv558-svg/Het-Dialer">GitHub Repository</a> · <a href="https://github.com/ravalv558-svg/Het-Dialer/releases">Releases</a></span></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Phone",
+  "description": "OPPO ColorOS 17 inspired native Android Phone, Dialer, InCallService, Call History, and Contacts application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
